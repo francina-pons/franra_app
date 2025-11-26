@@ -45,7 +45,7 @@ function App() {
         <div className="categories">
           <button className="category-btn letter" onClick={() => setActivePage('letter')}>Introducció</button>
           <button className="category-btn chronography" onClick={() => setActivePage('chronography')}>Cronografia</button>
-          <button className="category-btn quotes" onClick={() => setActivePage('quotes')}>Frases</button>
+          {/* <button className="category-btn quotes" hidden onClick={() => setActivePage('quotes')}>Frases</button>  */}
           <button className="category-btn gallery" onClick={() => setActivePage('gallery')}>Galeria</button>
           <button className="category-btn memes" onClick={() => setActivePage('memes')}>Memes</button>
         </div>

@@ -28,13 +28,14 @@ export default function MemesPage() {
   }
 
   return (
-    <div style={{textAlign: 'center'}}>
+    <div>
       <h2>Memes</h2>
+      <p>Per acabar he volgut posar una pàgina on pots veure memes random d'internet. A veure si en surten de bons :D </p>
       <p>Tria quin tipus de meme vols veure:</p>
-      <button onClick={() => fetchMeme('Cute Animals')} style={{fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: '#145b23', color: '#fff', border: 'none', marginBottom: '1rem', marginRight: '1rem'}}>Animals moníssims</button>
-      <button onClick={() => fetchMeme('Cats')} style={{fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: '#003049', color: '#fff', border: 'none', marginBottom: '1rem', marginRight: '1rem'}}>Només moixets</button>
-      <button onClick={() => fetchMeme('Funny Animals')} style={{fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: '#f77f00', color: '#fff', border: 'none', marginBottom: '1rem'}}>Animals graciosos</button>
-      {loading && <p>Loading...</p>}
+      <button onClick={() => fetchMeme('Cute Animals')} style={{fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: 'var(--deep-space-blue)', color: '#fff', border: 'none', marginBottom: '1rem', marginRight: '1rem'}}>Animals moníssims</button>
+      <button onClick={() => fetchMeme('Cats')} style={{fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: 'var(--deep-space-blue)', color: '#fff', border: 'none', marginBottom: '1rem', marginRight: '1rem'}}>Només moixets</button>
+      <button onClick={() => fetchMeme('Funny Animals')} style={{fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: 'var(--deep-space-blue)', color: '#fff', border: 'none', marginBottom: '1rem'}}>Animals graciosos</button>
+      {loading && <p>Carregant...</p>}
       {error && <p style={{color: '#d62828'}}>{error}</p>}
       {meme && (
         <div>
