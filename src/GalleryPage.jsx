@@ -69,7 +69,7 @@ export default function GalleryPage() {
       <div className="gallery-container">
         <button onClick={goLeft} className='gallery-button' aria-label="Previous">⟨</button>
         <img
-          src={`/src/assets/landscapes/${images[index]}`}
+          src={`/landscapes/${images[index]}`}
           alt={`Landscape ${index + 1}`}
           className="gallery-image"
         />
