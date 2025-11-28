@@ -6,8 +6,6 @@ export default function CodeEntryPage({ onUnlock }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    // TODO: elimina quan estigui fet
-    onUnlock();
     if (input === '2422') {
       onUnlock();
     } else {
