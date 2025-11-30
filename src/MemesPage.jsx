@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const GROUPS = {
   'Cute Animals': ['aww', 'Eyebleach', 'rarepuppers', 'cutememes', 'AnimalsBeingBros', 'AnimalsBeingDerps', 'adviceanimals'],
   'Cats': ['cats', 'catpictures', 'CatGifs', 'cutecats'],
-  'Memes random': ['memes', 'meme']
+  'Random memes': ['memes', 'meme']
 };
 
 export default function MemesPage() {
@@ -34,7 +34,7 @@ export default function MemesPage() {
       <p>Tria quin tipus de meme vols veure:</p>
       <button onClick={() => fetchMeme('Cute Animals')} className="category-btn memes-btn" style={{marginRight: '1rem'}}>Animals moníssims</button>
       <button onClick={() => fetchMeme('Cats')} className="category-btn memes-btn" style={{marginRight: '1rem'}}>Només moixets</button>
-      <button onClick={() => fetchMeme('Funny Animals')} className="category-btn memes-btn">Animals graciosos</button>
+      <button onClick={() => fetchMeme('Random memes')} className="category-btn memes-btn">Meme aleatori</button>
       {loading && <p>Carregant...</p>}
       {error && <p style={{color: '#d62828'}}>{error}</p>}
       {meme && (
