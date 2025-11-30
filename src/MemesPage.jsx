@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const GROUPS = {
-  'Cute Animals': ['aww', 'Eyebleach', 'rarepuppers'],
-  'Cats': ['cats'],
-  'Funny Animals': ['AnimalsBeingBros', 'AnimalsBeingDerps', 'adviceanimals', 'wholesomememes']
+  'Cute Animals': ['aww', 'Eyebleach', 'rarepuppers', 'cutememes', 'AnimalsBeingBros', 'AnimalsBeingDerps', 'adviceanimals'],
+  'Cats': ['cats', 'catpictures', 'CatGifs', 'cutecats'],
+  'Memes random': ['memes', 'meme']
 };
 
 export default function MemesPage() {
