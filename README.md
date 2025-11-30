@@ -6,8 +6,7 @@ He volgut fer aquesta web interactiva per celebrar 3 anys amb la meva parella. H
 
 - **Introducció:** Una petita introducció de per què he fet aquesta app i què hi podem trobar. 
 - **Cronografia:** Una cronografia de moments importants a la nostra relació.
-- **Frases:** A collection of meaningful quotes and messages.  TBD
-- **Galeria:** A gallery of photos capturing shared memories.  TBD 
+- **Galeria:** Algunes fotos de paisatges que hem anat fent. 
 - **Memes:** Una pàgina per veure memes random per fer-ho més divertit.
 
 ## Disseny
@@ -33,5 +32,3 @@ He volgut fer aquesta web interactiva per celebrar 3 anys amb la meva parella. H
 3. Run the app locally:
     ```bash
     npm run dev
-
-Open http://localhost:5173/ in your browser.

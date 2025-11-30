@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css'; // Import the CSS file
 
 export default function CodeEntryPage({ onUnlock }) {
   const [input, setInput] = useState('');
@@ -6,7 +7,7 @@ export default function CodeEntryPage({ onUnlock }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    if (input === '2422') {
+    if (input === '241122') {
       onUnlock();
     } else {
       setError('Has fallat! Torna-ho a provar!');
@@ -14,23 +15,23 @@ export default function CodeEntryPage({ onUnlock }) {
   }
 
   return (
-    <div style={{ maxWidth: 400, margin: '6rem auto', textAlign: 'center' }}>
+    <div className="code-entry-container">
       <h2>Entra es codi secret</h2>
       <p>Hauràs de pensar quin codi he posat :D</p>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="code-entry-form">
         <input
           type="password"
           value={input}
           onChange={e => setInput(e.target.value)}
           placeholder="Codi"
-          style={{ fontSize: '1.5rem', padding: '0.5rem', borderRadius: '0.5rem', border: '1px solid #ccc', width: '80%' }}
+          className="code-entry-input"
         />
         <br /><br />
-        <button type="submit" style={{ fontSize: '1.2rem', padding: '0.5rem 2rem', borderRadius: '0.5rem', background: '#003049', color: '#fff', border: 'none' }}>
+        <button type="submit" className="category-btn">
           Accedeix
         </button>
       </form>
-      {error && <p style={{ color: '#d62828', marginTop: '1rem' }}>{error}</p>}
+      {error && <p className="code-entry-error">{error}</p>}
     </div>
   );
 }
